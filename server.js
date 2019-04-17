@@ -33,7 +33,7 @@ app.use((request, response, next) => {
 });
 
 app.get('/', (request, response) => {
-    respone.render('main.hbs');
+    response.render('main.hbs');
 });
 
 app.get('/info', (request, response) => {
