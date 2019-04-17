@@ -33,15 +33,7 @@ app.use((request, response, next) => {
 });
 
 app.get('/', (request, response) => {
-//     response.send('<h1>Hello Express!</h1>');
-    reponse.send({
-        name: "Alasdair",
-        school: [
-            'BCIT',
-            'SFU',
-            'UBC'
-        ]
-    })
+    respone.render('main.hbs');
 });
 
 app.get('/info', (request, response) => {
