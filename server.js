@@ -7,12 +7,12 @@ const port = process.env.PORT || 8080;
 
 var app = express();
 
-request({
-    url: 'https://deckofcardsapi.com/api/deck/new/draw/?count=5',
-    json: true
-}, (error, response, body) => {
-    console.log(JSON.stringify(body.cards[0].image, undefined, 2));
-});
+// request({
+//     url: 'https://deckofcardsapi.com/api/deck/new/draw/?count=5',
+//     json: true
+// }, (error, response, body) => {
+//     console.log(JSON.stringify(body.cards[0].image, undefined, 2));
+// });
 
 var getCards = (numCards, callback) => {
     console.log('Loading API https://deckofcardsapi.com/api/deck/new/draw/?count=' + encodeURIComponent(numCards));
