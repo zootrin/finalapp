@@ -37,10 +37,10 @@ app.get('/', (request, response) => {
 });
 
 app.get('/info', (request, response) => {
-    response.send('about.hbs', {
-        title: 'About Page',
-        year: new Date().getFullYear(),
-        welcome: 'Hello!'
+    response.render('about.hbs', {
+        // title: 'About Page',
+        // year: new Date().getFullYear(),
+        // welcome: 'Hello!'
     });
 });
 
